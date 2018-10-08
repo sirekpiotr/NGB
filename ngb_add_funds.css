@@ -1,0 +1,30 @@
+html {
+	width: 100vw;
+	height: 100vh;
+}
+
+body {
+	background-color: white;
+	overflow: hidden;;
+}
+
+#header {
+	color: black;
+	height: 50px;
+	background-color: white;
+	text-align: left;
+	font-weight: bold;
+	font-size: 30px;
+	padding-top: 20px;
+	padding-left: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+a.nav_button, a.nav_button:active, a.nav_button:hover, a.nav_button:visited {
+	text-decoration: none;
+	color: black;
+	margin-right: 20px;
+	font-weight: 400;
+	font-size: 15px;
+	float: right;
+}
