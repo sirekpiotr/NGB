@@ -62,13 +62,26 @@
               echo "</div>";
             }
           }
-
-          //echo "<center><a href='#' class='add_transaction_button'>Add New</a></center>";
       } else {
           echo "Sorry. You don't have any transactions right now. <br> <br>";
-          echo "<a href='#' class='add_transaction_button'>Add New</a>";
       }
     ?>
+  </div>
+  <div id="right">
+	<center><div id="right_header">New transaction</div>
+	<div id="new_trans_form">
+		<form method="POST" action="ngb_add_new_transaction.php"> 
+			ID Odbiorcy: <br>
+			<input type='text' name='id_odbiorcy'> <br>
+			Tytul: <br>
+			<input type='text' name='tytul'> <br>
+			Kwota: <br>
+			<input type='number' step="any" name='kwota'> <br>
+			
+			<input type="submit" value="Send">
+		</form>
+	</div>
+	</center>
   </div>
 </body>
 </html>

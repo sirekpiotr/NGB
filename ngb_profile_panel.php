@@ -6,6 +6,12 @@
 		if($_SESSION['log'] != true) {
 			header('location: ngb_login.php');
 		}
+		
+		$user_id = $_SESSION['user_id'];
+		
+		if(isSet($_SESSION['log']) && $_SESSION['log'] == true) {
+			$zapytanie_o_saldo = "SELECT saldo FROM uzytkownik WHERE user_id = $user_id";
+		}
 ?>
 
 <html>
