@@ -39,23 +39,23 @@
 	<link rel="stylesheet" type="text/css" href="ngb_login.css">
 </head>
 <body>
-	<div id="header">NGB</div>
+	<div id="header">NGB
+	<a href="ngb_register.php" class="nav_button">New account</a>
+	<a href="ngb_about.html" class="nav_button">About us</a>
+	</div>
 	<div id="content_left">
-		<p id="header_content">New Generation Bank</p>
-		<p id="bank_quote">"A bank is a place where they lend you an umbrella in fair weather and ask for it back when it begins to rain." </p>
-		<p id="robert_frost">Robert Frost </p>
 	</div>
 	<div id="content_right">
-		<div id="login_box">
-			<p id="login_header">Zaloguj się<p> <br>
-			<form action="ngb_login.php" method='POST'>
-				<center> Identyfikator użytkownika: </center> <br>
-					<center><input type="text" name="user_id"></center> <br>
-				<center> Hasło: </center> <br>
-					<center><input type="password" name="password"></center>
-					<br> <br> <br>
-				<center><input type="submit" value="Zaloguj"></center>
-			</form>
+		<p id="login_header">Login to your account<p> <br>
+		<div id="form_login">
+		<form action="ngb_login.php" method='POST'>
+			Your identificator <br>
+				<input type="text" name="user_id"> <br>
+			 Password <br>
+				<input type="password" name="password">
+				<br> <br> <br>
+			<input type="submit" value="Login">
+		</form>
 		</div>
 	</div>
 </body>

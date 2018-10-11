@@ -18,7 +18,6 @@
 <body>
   <div id="header">NGB Transactions
     <a href="ngb_logout.php" class="nav_button">Logout</a>
-    <a href="ngb_user_settings.php" class="nav_button">Settings</a>
     <a href="ngb_profile_panel.php" class="nav_button">Home</a>
   </div>
 
@@ -71,11 +70,11 @@
 	<center><div id="right_header">New transaction</div>
 	<div id="new_trans_form">
 		<form method="POST" action="ngb_add_new_transaction.php"> 
-			ID Odbiorcy: <br>
+			Recipient's id: <br>
 			<input type='text' name='id_odbiorcy'> <br>
-			Tytul: <br>
+			Title: <br>
 			<input type='text' name='tytul'> <br>
-			Kwota: <br>
+			Amount: <br>
 			<input type='number' step="any" name='kwota'> <br>
 			
 			<input type="submit" value="Send">

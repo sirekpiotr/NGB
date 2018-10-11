@@ -5,6 +5,7 @@ html {
 
 body {
 	background-color: white;
+	margin: 0;
 	overflow: hidden;
 }
 
@@ -20,16 +21,27 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-#content-header {
-	height: 40px;
+#left {
+	float: left;
+	height: 100vh;
+	background-image: url('bg_main.jpg');
+	background-size: cover;
+	color: black;
+	width: 50%;
+}
+
+#right {
+	padding-top: 20vh;
+	float: left;
+	height: 100vh;
 	background-color: white;
 	color: black;
-	width: 100%;
+	width: 50%;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: normal;
 }
 
-#content-header h1 {
+#right h1 {
 	font-size: 45px;
 	font-weight: 400;
 }
@@ -48,6 +60,7 @@ body {
 }
 
 #balance {
+	color: black;
 	font-weight: 700;
 	font-size: 80px;
 	margin-bottom: 80px;
@@ -68,24 +81,3 @@ a.nav_button:hover {
   border-bottom: 2px solid rgba(255,49,114,1);
 }
 
-a.add_funds, a.add_funds:active, a.add_funds:visited {
-  margin-top: 50px;
-  text-decoration: none;
-  border-radius: 20px;
-	color: white;
-	font-weight: 400;
-	font-size: 18px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-right: 50px;
-  padding-left: 50px;
-  background-color: #141d39;
-  font-weight: 600;
-}
-
-a.add_funds:hover {
-  color: white;
-  padding-right: 55px;
-  padding-left: 55px;
-  background-color: #FCA813;
-}
